@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sandbox | raknarthor's blog]]></title>
   <link href="http://raknarthor.github.io/blog/categories/sandbox/atom.xml" rel="self"/>
   <link href="http://raknarthor.github.io/"/>
-  <updated>2015-03-09T14:48:24+03:00</updated>
+  <updated>2015-03-09T15:04:31+03:00</updated>
   <id>http://raknarthor.github.io/</id>
   <author>
     <name><![CDATA[raknarthor]]></name>
@@ -44,7 +44,7 @@
 
 <span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
      <span class="c1">// compute primes larger than minPrime</span>
-      <span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+     <span class="c1">// . . . .</span>
  <span class="o">}</span>
 <span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
 
