@@ -9,10 +9,11 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
+deploy_default = "push"
+git_with_username = "git -c user.name=raknarthor -c user.email='raknarthor@users.noreply.github.com'"
 
 # This will be configured for you when you run config_deploy
-deploy_branch  = "gh-pages"
+deploy_branch  = "master"
 
 ## -- Misc Configs -- ##
 
@@ -253,19 +254,19 @@ multitask :push do
   puts "## Deploying branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
   cd "#{deploy_dir}" do 
-    Bundler.with_clean_env { system "git pull" }
+    Bundler.with_clean_env { system "#{git_with_username} pull" }
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
   Rake::Task[:copydot].invoke(public_dir, deploy_dir)
   puts "\n## Copying #{public_dir} to #{deploy_dir}"
   cp_r "#{public_dir}/.", deploy_dir
   cd "#{deploy_dir}" do
-    system "git add -A"
+    system "#{git_with_username} add -A"
     message = "Site updated at #{Time.now.utc}"
     puts "\n## Committing: #{message}"
-    system "git commit -m \"#{message}\""
+    system "#{git_with_username} commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    Bundler.with_clean_env { system "git push origin #{deploy_branch}" }
+    Bundler.with_clean_env { system "#{git_with_username} push origin #{deploy_branch}" }
     puts "\n## Github Pages deploy complete"
   end
 end
@@ -323,17 +324,17 @@ task :setup_github_pages, :repo do |t, args|
   end
   branch = (repo_url.match(/\/[\w-]+\.github\.(?:io|com)/).nil?) ? 'gh-pages' : 'master'
   project = (branch == 'gh-pages') ? repo_url.match(/([^\/]+?)(\.git|$)/i)[1] : ''
-  unless (`git remote -v` =~ /origin.+?octopress(?:\.git)?/).nil?
+  unless (`#{git_with_username} remote -v` =~ /origin.+?octopress(?:\.git)?/).nil?
     # If octopress is still the origin remote (from cloning) rename it to octopress
-    system "git remote rename origin octopress"
+    system "#{git_with_username} remote rename origin octopress"
     if branch == 'master'
       # If this is a user/organization pages repository, add the correct origin remote
       # and checkout the source branch for committing changes to the blog source.
-      system "git remote add origin #{repo_url}"
+      system "#{git_with_username} remote add origin #{repo_url}"
       puts "Added remote #{repo_url} as origin"
-      system "git config branch.master.remote origin"
+      system "#{git_with_username} config branch.master.remote origin"
       puts "Set origin as default remote"
-      system "git branch -m master source"
+      system "#{git_with_username} branch -m master source"
       puts "Master branch renamed to 'source' for committing your blog source files"
     else
       unless !public_dir.match("#{project}").nil?
@@ -350,12 +351,12 @@ task :setup_github_pages, :repo do |t, args|
   rm_rf deploy_dir
   mkdir deploy_dir
   cd "#{deploy_dir}" do
-    system "git init"
+    system "#{git_with_username} init"
     system 'echo "My Octopress Page is coming soon &hellip;" > index.html'
-    system "git add ."
-    system "git commit -m \"Octopress init\""
-    system "git branch -m gh-pages" unless branch == 'master'
-    system "git remote add origin #{repo_url}"
+    system "#{git_with_username} add ."
+    system "#{git_with_username} commit -m \"Octopress init\""
+    system "#{git_with_username} branch -m gh-pages" unless branch == 'master'
+    system "#{git_with_username} remote add origin #{repo_url}"
     rakefile = IO.read(__FILE__)
     rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
     rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
