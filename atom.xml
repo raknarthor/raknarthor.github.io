@@ -4,7 +4,7 @@
   <title><![CDATA[raknarthor's blog]]></title>
   <link href="http://raknarthor.github.io/atom.xml" rel="self"/>
   <link href="http://raknarthor.github.io/"/>
-  <updated>2015-03-09T14:11:02+03:00</updated>
+  <updated>2015-03-09T14:30:02+03:00</updated>
   <id>http://raknarthor.github.io/</id>
   <author>
     <name><![CDATA[raknarthor]]></name>
@@ -30,6 +30,21 @@
 <span class="lineno">4</span> <span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
 <span class="lineno">5</span> <span class="c1"># An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line</span>
 <span class="lineno">6</span> <span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+
+<p>Another code snippet</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">PrimeThread</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="o">{</span>
+     <span class="kt">long</span> <span class="n">minPrime</span><span class="o">;</span>
+     <span class="n">PrimeThread</span><span class="o">(</span><span class="kt">long</span> <span class="n">minPrime</span><span class="o">)</span> <span class="o">{</span>
+         <span class="k">this</span><span class="o">.</span><span class="na">minPrime</span> <span class="o">=</span> <span class="n">minPrime</span><span class="o">;</span>
+     <span class="o">}</span>
+
+     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+         <span class="c1">// compute primes larger than minPrime</span>
+          <span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+     <span class="o">}</span>
+ <span class="o">}</span></code></pre></div>
 
 
 <p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>

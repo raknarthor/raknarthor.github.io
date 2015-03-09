@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sandbox | raknarthor's blog]]></title>
   <link href="http://raknarthor.github.io/blog/categories/sandbox/atom.xml" rel="self"/>
   <link href="http://raknarthor.github.io/"/>
-  <updated>2015-03-09T14:11:02+03:00</updated>
+  <updated>2015-03-09T14:30:02+03:00</updated>
   <id>http://raknarthor.github.io/</id>
   <author>
     <name><![CDATA[raknarthor]]></name>
@@ -34,6 +34,21 @@
 <span class="lineno"> 8</span> <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;=&gt;</span> <span class="n">prints</span> <span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="no">Hi</span><span class="p">,</span> <span class="no">Tom</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;</span> <span class="n">to</span> <span class="no">STDOUT</span><span class="o">.</span><span class="n">&lt;</span><span class="sr">/h1&gt;</span>
 <span class="lineno"> 9</span> 
 <span class="lineno">10</span> <span class="sr">&lt;p&gt;</span></code></pre></div></p>
+
+<p>Another code snippet
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">PrimeThread</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="o">{</span>
+     <span class="kt">long</span> <span class="n">minPrime</span><span class="o">;</span>
+     <span class="n">PrimeThread</span><span class="o">(</span><span class="kt">long</span> <span class="n">minPrime</span><span class="o">)</span> <span class="o">{</span>
+         <span class="k">this</span><span class="o">.</span><span class="na">minPrime</span> <span class="o">=</span> <span class="n">minPrime</span><span class="o">;</span>
+     <span class="o">}&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span> <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+     <span class="c1">// compute primes larger than minPrime</span>
+      <span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+ <span class="o">}</span>
+<span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span> <span class="o">}</span></code></pre></div></p>
 
 <p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
 ]]></content>
