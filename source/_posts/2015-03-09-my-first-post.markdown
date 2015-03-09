@@ -14,7 +14,7 @@ Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby linenos %}
 def print_hi(name)
-  puts "Hi, #{name}"
+  puts "Hi, #{name} !1"
 end
 print_hi('Tom')
 # An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line
