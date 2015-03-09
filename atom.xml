@@ -4,7 +4,7 @@
   <title><![CDATA[raknarthor's blog]]></title>
   <link href="http://raknarthor.github.io/atom.xml" rel="self"/>
   <link href="http://raknarthor.github.io/"/>
-  <updated>2015-03-09T14:06:59+03:00</updated>
+  <updated>2015-03-09T14:11:02+03:00</updated>
   <id>http://raknarthor.github.io/</id>
   <author>
     <name><![CDATA[raknarthor]]></name>
@@ -25,7 +25,7 @@
 <p>Jekyll also offers powerful support for code snippets:</p>
 
 <div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno">1</span> <span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-<span class="lineno">2</span>   <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="lineno">2</span>   <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2"> !1&quot;</span>
 <span class="lineno">3</span> <span class="k">end</span>
 <span class="lineno">4</span> <span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
 <span class="lineno">5</span> <span class="c1"># An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line An example of very long line</span>

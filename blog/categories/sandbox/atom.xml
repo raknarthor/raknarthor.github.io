@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Sandbox | raknarthor's blog]]></title>
   <link href="http://raknarthor.github.io/blog/categories/sandbox/atom.xml" rel="self"/>
   <link href="http://raknarthor.github.io/"/>
-  <updated>2015-03-09T14:06:59+03:00</updated>
+  <updated>2015-03-09T14:11:02+03:00</updated>
   <id>http://raknarthor.github.io/</id>
   <author>
     <name><![CDATA[raknarthor]]></name>
@@ -25,7 +25,7 @@
 <p>Jekyll also offers powerful support for code snippets:</p>
 
 <p><div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-<span class="lineno"> 2</span>   <span class="nb">puts</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Hi</span><span class="p">,</span> <span class="c1">#{name}&amp;rdquo;</span>
+<span class="lineno"> 2</span>   <span class="nb">puts</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="no">Hi</span><span class="p">,</span> <span class="c1">#{name} !1&amp;rdquo;</span>
 <span class="lineno"> 3</span> <span class="k">end</span>
 <span class="lineno"> 4</span> <span class="n">print_hi</span><span class="p">(</span><span class="o">&amp;</span><span class="n">lsquo</span><span class="p">;</span><span class="no">Tom</span><span class="o">&amp;</span><span class="n">rsquo</span><span class="p">;)</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
 <span class="lineno"> 5</span> 
