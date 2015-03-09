@@ -4,7 +4,7 @@
   <title><![CDATA[raknarthor's blog]]></title>
   <link href="http://raknarthor.github.io/atom.xml" rel="self"/>
   <link href="http://raknarthor.github.io/"/>
-  <updated>2015-03-09T16:14:51+03:00</updated>
+  <updated>2015-03-09T16:27:17+03:00</updated>
   <id>http://raknarthor.github.io/</id>
   <author>
     <name><![CDATA[raknarthor]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Git: Resolve Merge Conflicts in Favor of Theirs After Pull Remote]]></title>
+    <link href="http://raknarthor.github.io/blog/2015/03/09/git-resolve-merge-conflicts-in-favor-of-theirs-after-pull-remote/"/>
+    <updated>2015-03-09T16:22:00+03:00</updated>
+    <id>http://raknarthor.github.io/blog/2015/03/09/git-resolve-merge-conflicts-in-favor-of-theirs-after-pull-remote</id>
+    <content type="html"><![CDATA[<p>Thanks to this answer on SO: <a href="http://stackoverflow.com/a/8888015/1817777">http://stackoverflow.com/a/8888015/1817777</a></p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">git fetch --all
+git reset --hard origin/master</code></pre></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My First Post]]></title>
